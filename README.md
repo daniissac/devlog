@@ -49,8 +49,8 @@ Add tags with # prefix:
 
 All dependencies are loaded via CDN:
 
-PrismJS (syntax highlighting)
-Fira Code (font)
+- PrismJS (syntax highlighting)
+- Fira Code (font)
 
 ### Contributing
 
