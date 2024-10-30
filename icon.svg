@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="512" height="512" fill="#1e1e1e"/>
+  
+  <!-- Outer glow effect -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#569cd6" stroke-width="8" opacity="0.1"/>
+  
+  <!-- Main curly braces -->
+  <text x="50%" y="50%" font-family="'Fira Code', monospace" font-size="280" fill="#569cd6" text-anchor="middle" dominant-baseline="middle" font-weight="bold">{}</text>
+  
+  <!-- Log text with gradient -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4ec9b0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#569cd6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="50%" y="50%" font-family="'Fira Code', monospace" font-size="120" fill="url(#gradient)" text-anchor="middle" dominant-baseline="middle" font-weight="bold">log</text>
+  
+  <!-- Subtle code lines in background -->
+  <g opacity="0.1" stroke="#4ec9b0" stroke-width="2">
+    <line x1="80" y1="120" x2="180" y2="120" />
+    <line x1="100" y1="150" x2="160" y2="150" />
+    <line x1="320" y1="360" x2="420" y2="360" />
+    <line x1="340" y1="390" x2="400" y2="390" />
+  </g>
+</svg>
