@@ -101,8 +101,8 @@ class DevLog {
     }
 
     formatText(text) {
-        // Enhanced code block detection
-        text = text.replace(/(\w+)?\n([\s\S]*?)/g, (match, lang, code) => {
+        // Show copy button only for code blocks
+        text = text.replace(/```(\w+)?\n([\s\S]*?)```/g, (match, lang, code) => {
             const language = lang || 'javascript';
             return `<div class="code-snippet">
                         <pre><code class="language-${language}">${this.escapeHtml(code.trim())}</code></pre>
@@ -110,15 +110,12 @@ class DevLog {
                     </div>`;
         });
 
-        // Inline code
+        // Inline code without copy button
         text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
         
-        // Line breaks
         text = text.replace(/\n/g, '<br>');
-
         return text;
     }
-
     escapeHtml(text) {
         const div = document.createElement('div');
         div.textContent = text;
