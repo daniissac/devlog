@@ -60,10 +60,37 @@ textarea {
     border-left: 3px solid var(--accent);
 }
 
+.tags {
+    margin: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 .tags span {
     color: var(--secondary);
     margin-right: 0.5rem;
+    padding: 4px 8px;
+    border-radius: 16px;
+    font-size: 12px;
 }
+
+#tagInput {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f8f9fa;
+}
+
+#tagInput:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,.25);
+}
+
 
 @media (max-width: 768px) {
     body {
