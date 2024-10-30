@@ -19,7 +19,7 @@ Visit: https://daniissac.com/devlog
 
 ## Installation
 
-1. Visit https://yourusername.github.io/devlog
+1. Visit the above webpage
 2. Chrome/Edge: Click the install icon (+) in the address bar
 3. Safari iOS: Tap Share button and select 'Add to Home Screen'
 4. Safari macOS: Click 'File > Add to Dock'
